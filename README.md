@@ -6,7 +6,10 @@ Televizyonunuzun USB'ye çıkardığı `.sdx` kanal listesini açın; kanalları
 
 > **Tek bir HTML dosyası.** İndirin, çift tıklayın, çalışsın. İnternet gerekmez; dosyanız hiçbir yere gönderilmez, her şey tarayıcınızda olur.
 
-🔗 **Hemen deneyin:** [`index.html`](index.html) dosyasını indirip tarayıcıda açın.
+🔗 **Hemen deneyin (kurulum yok):** https://yusufkilinc44.github.io/SDX-Kanal-Editor/  
+⬇️ **İndirin:** [Son sürüm (Releases)](../../releases/latest) ya da [`index.html`](index.html) dosyasını indirip tarayıcıda açın.
+
+🇬🇧 *English summary at the bottom.*
 
 ---
 
@@ -88,3 +91,17 @@ SatcoDX biçiminin herkese açık resmi bir şartnamesi yoktur; editör gerçek 
 **Yusuf Kılınç** · Ekim 2026 · [yusuf.kilinc@hotmail.com](mailto:yusuf.kilinc@hotmail.com)
 
 Beğendiyseniz depoya ⭐ vermeyi unutmayın; öneri ve hata bildirimleri için [Issues](../../issues) bölümünü kullanabilirsiniz.
+
+---
+
+## 🇬🇧 English
+
+**SDX Kanal Editör** is a free, single-file, browser-based editor for **SatcoDX (`.sdx`) satellite channel lists**, the format exported to USB by TVs built on Vestel 17MB chassis (sold under brands such as Vestel, Regal, SEG, Finlux, Hi-Level, Toshiba, JVC, Telefunken, Hitachi and some Panasonic models).
+
+- **Try it online:** https://yusufkilinc44.github.io/SDX-Kanal-Editor/ — or download [`index.html`](index.html) and open it in Chrome / Edge / Firefox. No install, no server, works offline; your file never leaves your browser.
+- **Edit:** reorder (move up/down), rename, insert / overwrite blank channels, delete (also multi-select), find & replace, upper / title case, per-field filters, field-by-field record editor, file health check. Saves byte-for-byte in the same format (`SATCODX103` 127-char and `SATCODX105` 132-char records, trailing NUL block preserved).
+- **Auto-sort (optional):** give a *channel list* (number + name, Excel/CSV/TXT) and/or a *frequency list* (Excel); channels are matched by DVB identity (ONID + TSID + SID) or frequency + polarisation + SID, unnamed records get names, missing PIDs are filled and channels missing from your file can be added.
+- **Export:** the whole list to a formatted Excel workbook.
+- The user interface is in Turkish. Tested with MB82 (`SATCODX103`) files. Always keep a backup of the original file exported by your TV.
+
+Author: **Yusuf Kılınç** · [yusuf.kilinc@hotmail.com](mailto:yusuf.kilinc@hotmail.com) · If you find it useful, please give the repo a ⭐
